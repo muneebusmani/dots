@@ -1,0 +1,1 @@
+. <(box autocomplete:script zsh)

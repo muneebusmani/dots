@@ -1,0 +1,4 @@
+[default]
+path = "~/custom_wallpapers/photos/"
+transition_time = 600
+duration = '30 m'
