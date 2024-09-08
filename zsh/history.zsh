@@ -483,7 +483,6 @@ php-cs-fixer
 php-cs-fixer check
 ./vendor/bin/var-dump-server
 dracut
-sudo dracut
 sudo rm -rf node_modules 
 dotnet --help
 dotnet workload clean
@@ -839,7 +838,6 @@ nvim ~/.config/gtk-3.0/settings.ini
 yare gnome
 gnome
 yare phpactor
-cd .config
 gh repo clone LazyVim/Starter 
 NVIM_APPNAME=starter nvim .
 sail down
@@ -1068,7 +1066,6 @@ mv ~/jetbra .
 cd jetbra/
 mv jetbra ~
 nvim ~/.config/i3/i3blocks.conf
-zellij
 nvim ~/zsh/catppuccin.toml
 nvim ~/.config/starship.toml
 rm ~/.config/starship.toml
@@ -1095,7 +1092,6 @@ git checkout laravel
 nvim ./laravel.lua
 cd ~/.vscode
 nushell
-firefox
 composer global require tightenco/tlint
 tlint
 tlint --help
@@ -1248,7 +1244,6 @@ yare $(yasss switchboard-plug | grep -v 'git' | grep a11y)
 cd ~/.config/nvim
 cd ../i3
 nvim ./config
-killall firefox
 GTK_DEBUG=interactive pavucontrol
 yass gtk4
 yass gtk4 | grep switch
@@ -1345,7 +1340,6 @@ cd /usr
 cd bin
 mkdir ~/usrlocalbin
 cp * ~/usrlocalbin
-cd share
 cd ~/.fzrf
 cd ~/.fzf
 yay -Qss
@@ -1421,7 +1415,6 @@ ls /usr/share/nvm/init-nvm.sh
 sh /usr/share/nvm/init-nvm.sh
 which nvm
 yay -S nvm
-nvm
 npm
 npm i -g neovim
 yay -Ss manga
@@ -1447,7 +1440,6 @@ yain waydroid waydroid-image-gapps
 sudo waydroid init -s GAPPS
 warp-cli status
 warp-cli connect
-ping google.com
 yay -Ss waydroid-settings-git
 yay -S waydroid-settings-git waydroid-script-git
 waydroid-helper
@@ -1467,7 +1459,6 @@ ls ~/.cache/waydroid-script
 ~/.cache/waydroid-script/downloads
 which waydroid-extras
 nvim /usr/bin/waydroid-extras
-cd /
 fd stuff
 fd smartdock
 cd opt/waydroid-script
@@ -1543,7 +1534,6 @@ yay -S catppuccin-gtk-theme-mocha
 yay -S plasma5-themes-sweet-full-git plasma5-themes-sweet-kde-git
 nvim ~/.gtkrc-2.0
 GTK_THEME=catppuccin-mocha-flamingo-standard+default pavucontrol
-cd 
 rg GTK_THEME=
 nvim ~/.config/hypr/UserConfigs/ENVariables.conf
 nvim .,
@@ -1601,12 +1591,10 @@ ls ~/.config/waybar/config
 nvim /home/muneeb/.config/waybar/configs/'[TOP] Default Laptop_v3'
 nvim ~/.config/waybar.old/style.css
 nvim ~/.config/waybar.old/config
-nvim ~/.config/waybar/config
 nvim ~/.config/hypr/UserConfigs/Monitors.conf
 npx shadcn@latest add 
 code .
 tmux attach
-sudo systemctl restart NetworkManager.service
 warp-cli disconnect
 nvim ~/.config/hypr/
 ~/.config/hypr/
@@ -1623,10 +1611,7 @@ cd ~/.local share nvim
 cd ~/.local/share/nvim
 cd ./lazy
 rm ./* -rf
-sudo rm ./* -rf
 cd .config/nvim
-nvim
-cd
 cls
 nvim ~/.config/nvim 
 cd nvim 
@@ -1635,7 +1620,6 @@ optimus-manager --switch nvidia
 systemctl blacklist
 ls /etc/modprobe.d
 nvim blacklist-blacklist-snd_soc_avs.conf
-yay -Syyuu
 cd /etc/modprobe.d
 sudo nvim blacklist-blacklist-snd_soc_avs.conf
 yay -Rns hicolor-icon-theme
@@ -1644,16 +1628,11 @@ yay -Rns hicolor-icon-theme -dd
 yay -S hicolor-icon-theme
 cd coding
 cd react-1
-sudo nvim /boot/grub/grub.cfg
-sudo nvim /etc/default/grub
 sudo update-grub
 yay -Qs pipewire
 sudo systemctl daemon-reload
 sudo systemctl daemon-reexec
-sudo systemctl restart sddm
 yay -Qqs pipewire
-nvidia-smi
-optimus-manager --status
 sudo modprobe -r nvidia
 sudo modprobe -r nvidia --force
 ls /boot/efi
@@ -1671,8 +1650,6 @@ sudo cd /boot/efi
 sudo mkdir /boot/efi/181536bfbda048259110ccb9dcf190c2/6.6.49-1-lts
 sudo mkdir /boot/efi/181536bfbda048259110ccb9dcf190c2/6.10.8-zen1-1-zen
 sudo mkdir /boot/efi/181536bfbda048259110ccb9dcf190c2/6.10.8-arch1-1
-sudo dracut --regenerate-all --force
-ls /boot
 yay -S bitwarden
 yay -S bitwarden-rofi
 bitwarden-rofi
@@ -1788,12 +1765,10 @@ killall node
 create-vite
 cd lolapp
 npm install; npm dev
-cd ../
 rm lolapp -rf
 sudo waydroid session stop; sudo waydroid container stop;
 clear;zsh
 bun dev
-cd hypr
 cd hypr.p;d
 cd hypr.old
 nv
@@ -1809,7 +1784,6 @@ slimbookintelcontroller --help
 slimbookintelcontroller --minimized
 slimbookintelcontroller-pkexec
 slimbookintelcontroller-pkexec --minimized
-clear
 intel-undervolt
 intel-undervolt 
 intel-undervolt  read
@@ -1836,7 +1810,6 @@ sudo pip install undervolt
 proto uninstall python
 yay -S python-pipx
 which pip
-pipx install undervolt
 sudo rm /root/.zshrc
 sudo ln -s ~/.zshenv /root/.zshenv
 sudo ln -s ~/zsh /root/zsh
@@ -1844,7 +1817,6 @@ sudo zsh
 chsh -s $(zsh)
 chsh -s $(/bin/zsh)
 sudo undervolt0 --read
-undervolt --read
 ./.local/bin/undervolt
 sudo ln -s ./.local/bin/undervolt /usr/local/bin/undervolt
 ls ~/.local/bin/undervolt
@@ -1855,7 +1827,6 @@ su
 ./undervolt
 rm undervolt
 sudo ln -s ~/.local/bin/undervolt /usr/local/bin/undervolt
-sudo su
 sudo rm /usr/local/bin/undervolt
 sudo ln -s /home/muneeb/.local/bin/undervolt /usr/local/bin/undervolt
 sudo undervolt --throttlestop
@@ -1868,7 +1839,6 @@ sudo undervolt --temp-bat 80
 sudo undervolt --temp-bat 97
 sudo  undervolt  -p1 15 32 -p2 15 3
 sudo  undervolt  -p1 15 1 -p2 15 1
-sudo  undervolt  -p1 15 10 -p2 15 10
 sudo undervolt --lock-power-limit
 sudo undervolt --core -10
 sudo undervolt --core 10 --cache -10 --uncore -10
@@ -1884,16 +1854,12 @@ sudo  undervolt  -p1 15 10 -p2 15 10 --lock-power-limit
 htop
 nvim 
 btop
-pipx uninstall undervolt
-sudo nvim /etc/modprobe.d/blacklist-blacklist-snd_soc_avs.conf
 sudo modprobe -r snd_soc_avs
 pavucontrol
-reboot
 waydroid-extras
 sudo waydroid-extras
 ls /dev/binder
 waydroid show-full-ui
-lsblk
 curl https://mirror.cachyos.org/cachyos-repo.tar.xz -o cachyos-repo.tar.xz\
 tar xvf cachyos-repo.tar.xz && cd cachyos-repo
 nvim cachyos-repo.sh
@@ -1905,11 +1871,7 @@ sudo downgrade
 sudo downgrade --help
 systemctl --user stop warp-taskbar.service
 sudo systemctl stop warp-svc.service --now
-mkinitcpio
 yay -Suu
-cd react
-sudo undervolt
-sudo undervolt --read
 sudo /usr/local/bin/undervolt
 ls /usr/local/bin/undervolt
 which undervolt
@@ -1919,13 +1881,11 @@ undervolt
 nvim ./cachyos-repo.sh
 sudo ./cachyos-repo.sh --remove
 sudo ~/cachyos-repo/cachyos-repo.sh  --remove
-nvim .
 ls ./Applications/.trash
 ls ./coding/react-1
  ./coding/react-1
 git init
 git add -A
-git commit -am "inital commit"
 gh repo create
 cd ~/.config
 ls xsettingsd/
@@ -1936,16 +1896,278 @@ git add wofi rofi wpaperd xsettingsd/ waybar/ waybar.old/ wallust swaync/ swaync
 git rm --cached ~/.config/bat
 git rm --cached ~/.config/bat -f
 cd bat
-git status
 cd themes
-cd ../../
-gst
 git add ags alacritty/
 cd ~/.local/share/
-sudo nvim /etc/pacman.conf
-yay -Syuu
 cd wallpapers
+git status
+git commit -am "inital commit"
+yay -Qe
+sha256sum ~/Downloads/cachyos-desktop-linux-240818.iso
+cat ~/Downloads/cachyos-desktop-linux-240818.iso.sha256
+nvim
+ls /dev/sdb
+sudo dd if=/home/muneeb/Downloads/cachyos-desktop-linux-240818.iso of=/dev/sdb bs=24G
+sudo dd if=/home/muneeb/Downloads/cachyos-desktop-linux-240818.iso of=/dev/sdb bs=24G status=progress
+yay -S balena-etcher
+balena-etcher
+sudo ~/cachyos-repo/cachyos-repo.sh  --install
+pipx install undervolt
+undervolt --read
+sudo undervolt
+sudo systemctl restart NetworkManager.service
+sudo undervolt -p1 15 10 -p2 15 10
+sudo undervolt -p1 10 30 -p2 30 3
+sudo undervolt -p1 35 30 -p2 45 3
+sudo undervolt -p1 45 30 -p2 55 3
+sudo undervolt --read
+sudo undervolt -p1 45 10 -p2 55 10
+sudo pacman -Syu
+sudo pacman -Ss lib32
+sudo pacman -Ss lib32 | grep cachy
+sudo pacman -S cava downgrade find-the-command go grimblast julia libxnvctrl nvidia-settings nvm
+Y
+sudo pacman -S cava downgrade find-the-command-git go grimblast julia libxnvctrl nvidia-settings nvm
+sudo pacman -Syyu
+shutdown
+shutdown -c
+sudo shutdown -P now
+shutdown -p now
+shutdown -P now
+systemctl shutdown
+systemctl poweroff
+systemctl suspend
+killall suspend
+systemctl status suspend.target
+systemctl start suspend.target
+systemctl stop suspend.target
+sudo systemctl stop suspend.target
+sudo systemctl stop suspend.target --force
+sudo pacman -S linux-cachyos-lts linux-cachyos linux-cachyos-headers linux-cachyos-lts-headers
+yay -S linux-cachyos-lts linux-cachyos linux-cachyos-headers linux-cachyos-lts-headers
+killall whatsapp-for-linux
+cd /var/lib
+l;s
+cd local
+cd ../sync
+cd ../local
+cd ../../
+cd /var/cache/
+cd 
+cd /
+cd usr
+cd share
+cd /home/muneeb
+cd .local
+cd state
+cd ../share
+sudo dracut
+sudo nvim /boot/grub/grub.cfg
+sudo nvim /etc/default/grub
+sudo nvim /etc/default/grub.d/00_garuda-kernel-params.cfg
+sudo dracut --help
+sudo mkdir /boot/efi/181536bfbda048259110ccb9dcf190c2/6.10.8-2-cachyos
+sudo reboot
+pipx uninstall undervolt
+cd hypr
+rg rainbow
+nvim ./UserConfigs/UserSettings.conf
+yay -Ss power-profiles-daemon-tlp-git
+yay -Ss power-profiles-daemon
+yay -Rns slimbookbattery slimbookintelcontroller
+system76-power daemon
+sudo system76-power daemon
+systemctl list-unit-files | grep enabled | grep system76
+sudo systemctl list-unit-files | grep enabled | grep system76
+yay -S system76-firmware
+sudo systemctl status system76-firmware-daemon.service
+sudo systemctl enable --now system76-firmware-daemon.service
+gpasswd
+sudo gpasswd -a $USER adm
+yay -S firmware-manager
+yay -S firmware-manager system76-driver
+sudo pacman -S python-pytest
+yay -S firmware-manager-git system76-driver
+yay -S system76-firmware-daemon-git firmware-manager-git system76-driver-git
+yay -S firmware-manager-git system76-driver-git
+yay -Ss system76
+yay -S firmware-manager system76-driver-git
+yay -Qs system76
+yay -Rns system76-firmware
+yay -Rns system76-power
+yay -S system76-power
+sudo systemctl status com.system76.PowerDaemon.service
+sudo systemctl enable --nowcom.system76.PowerDaemon.service
+sudo systemctl enable --now com.system76.PowerDaemon.service
+system76-power profile --help
+system76-power graphics help--help
+system76-power graphics --help
+sudo pacman -Ss system76-power
+ls /boot
+killall pacman
+sudo rm /var/lib/pacman/db.lck
+yay -Rns garuda-optimus-manager-config
+system76-power graphics power
+system76-power graphics power --help
+system76-power graphics power off
+sudo system76-power graphics power off
+sudo system76-power graphics power
+sudo system76-power graphics
+system76-power graphics 
+system76-power
+system76-power profile
+system76-power profile battery
+system76-power graphics switchable
+system76-power graphics integrated
+system76-power graphics nvidia --debug
+system76-power graphics nvidia -d
+yay -Ssy mkinit
+yay -S mkinitcpio
+sudo pacman -S mkinitcpio
+sudo pacman -Ss mkinitcpio
+system76-power profile 
+system76-power 
+nvidia-smi
+system76-power graphics
+mkinitcpio
+pacman -S mkinitcpio
+nvim /etc/pacman.conf
+pacman -Ss mkinitcpio
+pacman -S core/mkinitcpio
+system76-power graphics help
+system76-power graphics nvidia
+RUST_BACKTRACE=1 system76-power graphics nvidia
+yay -S optimus-manager
+clear
+sudo nvim /etc/pacman.conf
+yay -S garuda-optimus-manager-config
+nvim ~/.config/hypr/UserConfigs/UserSettings.conf
+sudo systemctl enable bluetooth-autoconnect.service
+sudo systemctl enable bluetooth-autoconnect.service --now
+cd ~/Arch-Hyprland
+cd JaKooLit-Hyprland-Dots
+cd install-scripts
+rg bluetooth
+./bluetooth.sh
+yay -Rns pulseaudio-bluetooth
+sudo systemctl restart sddm
+Hyprland
+optimus-manager --status
+blueman-services
+yay -Ss bluetooth
+yay -S bluedevil
+bluedevil
+blueman-manager
+bluedevil-wizard
+sudo dracut --regenerate-all --force
+sudo systemctl status bluetooth.target
+bluetoothctl
+rfkill
+lsmod | grep bluetooth
+lsusb | grep -i bluetoot
+sudo systemctl stop bluetooth-autoconnect.service
+sudo systemctl stop bluetooth.target
+sudo systemctl stop bluetooth.service
+sudo systemctl stop bluetooth
+hciconfig hci0 down
+yay -S hciconfig
+yay -Ss hciconfig
+rmmod btusb
+sudo rmmod btusb
+modprobe btusb
+sudo modprobe btusb
+blueman-adapters
+ rfkill list all
+ dmesg | egrep -i 'blue|firm' 
+nvim ~/.config/yay/config.json
+yay -Syyuu
+yay -Syuu
+yay -Syu
+sudo nvim /etc/modprobe.d/blacklist-blacklist-snd_soc_avs.conf
+bluetoothctl list
+sudo systemctl status bluetooth-autoconnect.service
+killall bluetoothd
+sudo killall bluetoothd
+sudo systemctl disable --now bluetooth.service
+sudo /usr/lib/bluetooth/bluetoothd -n -d
+sudo pacman -S bluez
+sudo pacman -S bluez-*
+sudo pacman -S bluez-\*
+pamac install bluez*
+yay -Qs pamac
+pamac install bluez\*
+sudo systemctl enable --now bluetooth.service
+sudo systemctl status bluetooth.service
+rg dmesg
+wtf
+dmesg
+sudo dmesg | egrep -i 'blue|firm' 
+sudo dmesg
+sudo pacman -S linux-firmware\
+
+sudo ls /var/cache/ldconfig
+/var/cache/
+cd pacman
+cd pkg
+sudo rm ./* -rf
+sudo powerpill -S linux-firmware
+cd Pictures
+cd ../
+nvm
+rm ./.nvm -rf
+cd .proto
+cd
+rm ~/.cargo/ -rf
+~/.cache/
+ducks.
+sudo ducks
+sudo su
+cd yay
+ducks
+bluetoothctl power on
++
+cd react
+lsblk
+ping google.com
+timedatectl --machine
+ping 1.1.1.1
+yay -S zellij
+zellij
+killall firefox
+firefox
+firefox --debug
+killall blueman
+nvim ~/.config/cava/config
+cd .config
+gst
+mkdir dots
+cd dots
 ls
+touch init-dots.sh
+chmod +x init-dots.sh
+nvim init-dots.sh
+yay -S firefox-esr
+rg time
+nvim modules
+nvim ~/.config/nvim
+reboot
+timed-read
+timedatectl --help
+sudo timedatectl set-local-rtc 1 once
+sudo timedatectl set-local-rtc 1
+timedatectl show
+timedatectl
+sudo timedatectl set-local-rtc 0
+time
+nvim ~/.config/waybar/config
+nvim ~/.config/waybar/modules
+cd waybar
+nvim .
+killall waybar
+waybar
 q
-: 1725700298:0;git status
-: 1725700350:0;git commit -am "inital commit"
+reboot
+: 1725819886:0;sudo timedatectl set-local-rtc 1
+: 1725819913:0;reboot
+: 1725820009:0;gst
+: 1725820016:0;git commit -am "saving changes"
